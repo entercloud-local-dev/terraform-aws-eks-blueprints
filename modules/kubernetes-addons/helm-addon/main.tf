@@ -43,6 +43,7 @@ resource "helm_release" "addon" {
     content {
       name  = each_item.value.name
       value = each_item.value.value
+      type  = try(each_item.value.type, null)
     }
   }
 
@@ -53,6 +54,7 @@ resource "helm_release" "addon" {
     content {
       name  = each_item.value.name
       value = each_item.value.value
+      type  = try(each_item.value.type, null)
     }
   }
   depends_on = [module.irsa]
@@ -65,6 +67,7 @@ module "irsa" {
   create_kubernetes_service_account = try(var.irsa_config.create_kubernetes_service_account, true)
   kubernetes_namespace              = var.irsa_config.kubernetes_namespace
   kubernetes_service_account        = var.irsa_config.kubernetes_service_account
+  kubernetes_svc_image_pull_secrets = var.irsa_config.kubernetes_svc_image_pull_secrets
   irsa_iam_policies                 = var.irsa_config.irsa_iam_policies
   irsa_iam_role_name                = var.irsa_iam_role_name
   irsa_iam_role_path                = var.addon_context.irsa_iam_role_path
