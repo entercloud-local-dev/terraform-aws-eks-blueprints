@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.3.2">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.3.2">
     
     
       
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../node-groups/" class="md-nav__link">
+      <a href="../../node-groups.md" class="md-nav__link">
         Node Groups
       </a>
     </li>
@@ -450,6 +450,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../argo-workflows/" class="md-nav__link">
+        Argo Workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../argocd/" class="md-nav__link">
         ArgoCD
       </a>
@@ -590,6 +604,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../cert-manager-istio-csr/" class="md-nav__link">
+        cert-manager-istio-csr
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../cert-manager/" class="md-nav__link">
         cert-manager
       </a>
@@ -660,6 +688,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../consul/" class="md-nav__link">
+        Consul
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../crossplane/" class="md-nav__link">
         Crossplane
       </a>
@@ -676,6 +718,20 @@
     <li class="md-nav__item">
       <a href="../csi-secrets-store-provider-aws/" class="md-nav__link">
         secrets-store-csi-driver-provider-aws
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datadog-operator/" class="md-nav__link">
+        Datadog Operator
       </a>
     </li>
   
@@ -746,6 +802,20 @@
     <li class="md-nav__item">
       <a href="../grafana/" class="md-nav__link">
         Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kafka/" class="md-nav__link">
+        Strimzi Operator for Apache Kafka
       </a>
     </li>
   
@@ -830,6 +900,19 @@
   <a href="#upgrading-the-chart" class="md-nav__link">
     Upgrading the Chart
   </a>
+  
+    <nav class="md-nav" aria-label="Upgrading the Chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gitops-configuration" class="md-nav__link">
+    GitOps Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -988,6 +1071,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../portworx/" class="md-nav__link">
+        Portworx add-on for EKS Blueprints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../prometheus/" class="md-nav__link">
         Prometheus
       </a>
@@ -1074,6 +1171,20 @@
     <li class="md-nav__item">
       <a href="../tetrate-istio/" class="md-nav__link">
         Tetrate Istio Distro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thanos/" class="md-nav__link">
+        Thanos
       </a>
     </li>
   
@@ -1327,6 +1438,19 @@
     Upgrading the Chart
   </a>
   
+    <nav class="md-nav" aria-label="Upgrading the Chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gitops-configuration" class="md-nav__link">
+    GitOps Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1380,6 +1504,12 @@
 <h2 id="upgrading-the-chart">Upgrading the Chart<a class="headerlink" href="#upgrading-the-chart" title="Permanent link">&para;</a></h2>
 <p>Be aware that it is likely necessary to update the CRDs when updating the Chart version. Refer to the Project documentation on upgrades for your specific versions: https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack#upgrading-chart</p>
 <p>For complete project documentation, please visit the <a href="https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack">kube-prometheus-stack Github repository</a>.</p>
+<h3 id="gitops-configuration">GitOps Configuration<a class="headerlink" href="#gitops-configuration" title="Permanent link">&para;</a></h3>
+<p>The following properties are made available for use when managing the add-on via GitOps.</p>
+<div class="highlight"><pre><span></span><code>kubePrometheusStack = {
+  enable = true
+}
+</code></pre></div>
 
               
             </article>

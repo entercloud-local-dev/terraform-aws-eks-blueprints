@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.3.2">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.3.2">
     
     
       
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../node-groups/" class="md-nav__link">
+      <a href="../../node-groups.md" class="md-nav__link">
         Node Groups
       </a>
     </li>
@@ -450,6 +450,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../argo-workflows/" class="md-nav__link">
+        Argo Workflows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../argocd/" class="md-nav__link">
         ArgoCD
       </a>
@@ -590,6 +604,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../cert-manager-istio-csr/" class="md-nav__link">
+        cert-manager-istio-csr
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../cert-manager/" class="md-nav__link">
         cert-manager
       </a>
@@ -714,6 +742,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../consul/" class="md-nav__link">
+        Consul
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../crossplane/" class="md-nav__link">
         Crossplane
       </a>
@@ -730,6 +772,20 @@
     <li class="md-nav__item">
       <a href="../csi-secrets-store-provider-aws/" class="md-nav__link">
         secrets-store-csi-driver-provider-aws
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datadog-operator/" class="md-nav__link">
+        Datadog Operator
       </a>
     </li>
   
@@ -800,6 +856,20 @@
     <li class="md-nav__item">
       <a href="../grafana/" class="md-nav__link">
         Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kafka/" class="md-nav__link">
+        Strimzi Operator for Apache Kafka
       </a>
     </li>
   
@@ -994,6 +1064,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../portworx/" class="md-nav__link">
+        Portworx add-on for EKS Blueprints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../prometheus/" class="md-nav__link">
         Prometheus
       </a>
@@ -1080,6 +1164,20 @@
     <li class="md-nav__item">
       <a href="../tetrate-istio/" class="md-nav__link">
         Tetrate Istio Distro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thanos/" class="md-nav__link">
+        Thanos
       </a>
     </li>
   
@@ -1364,8 +1462,8 @@
 <p>Cilium can be set up in two manners:
 - In combination with the <code>Amazon VPC CNI plugin</code>. In this hybrid mode, the AWS VPC CNI plugin is responsible for setting up the virtual network devices as well as for IP address management (IPAM) via ENIs.
 After the initial networking is setup for a given pod, the Cilium CNI plugin is called to attach eBPF programs to the network devices set up by the AWS VPC CNI plugin in order to enforce network policies, perform load-balancing and provide encryption.
-Read the installation instruction <a href="https://docs.cilium.io/en/stable/gettingstarted/cni-chaining-aws-cni/#chaining-aws-cni">here</a>
-- As a replacement of <code>Amazon VPC CNI</code>,  read the complete installation guideline <a href="https://docs.cilium.io/en/stable/gettingstarted/k8s-install-helm/">here</a></p>
+Read the installation instruction <a href="https://docs.cilium.io/en/latest/installation/cni-chaining-aws-cni/">here</a>
+- As a replacement of <code>Amazon VPC CNI</code>,  read the complete installation guideline <a href="https://docs.cilium.io/en/latest/installation/k8s-install-helm/">here</a></p>
 <p>For complete project documentation, please visit the <a href="https://docs.cilium.io/en/stable/">Cilium documentation site</a>.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>By Cilium in combination with the <code>Amazon VPC CNI plugin</code> by enabling the add-on via the following.</p>

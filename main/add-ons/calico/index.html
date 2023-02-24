@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.3.2">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.3.2">
     
     
       
@@ -254,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../node-groups/" class="md-nav__link">
+      <a href="../../node-groups.md" class="md-nav__link">
         Node Groups
       </a>
     </li>
@@ -438,6 +438,20 @@
     <li class="md-nav__item">
       <a href="../apache-airflow/" class="md-nav__link">
         Apache Airflow add-on
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../argo-workflows/" class="md-nav__link">
+        Argo Workflows
       </a>
     </li>
   
@@ -644,6 +658,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../cert-manager-istio-csr/" class="md-nav__link">
+        cert-manager-istio-csr
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../cert-manager/" class="md-nav__link">
         cert-manager
       </a>
@@ -714,6 +742,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../consul/" class="md-nav__link">
+        Consul
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../crossplane/" class="md-nav__link">
         Crossplane
       </a>
@@ -730,6 +772,20 @@
     <li class="md-nav__item">
       <a href="../csi-secrets-store-provider-aws/" class="md-nav__link">
         secrets-store-csi-driver-provider-aws
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datadog-operator/" class="md-nav__link">
+        Datadog Operator
       </a>
     </li>
   
@@ -800,6 +856,20 @@
     <li class="md-nav__item">
       <a href="../grafana/" class="md-nav__link">
         Grafana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kafka/" class="md-nav__link">
+        Strimzi Operator for Apache Kafka
       </a>
     </li>
   
@@ -994,6 +1064,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../portworx/" class="md-nav__link">
+        Portworx add-on for EKS Blueprints
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../prometheus/" class="md-nav__link">
         Prometheus
       </a>
@@ -1080,6 +1164,20 @@
     <li class="md-nav__item">
       <a href="../tetrate-istio/" class="md-nav__link">
         Tetrate Istio Distro
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../thanos/" class="md-nav__link">
+        Thanos
       </a>
     </li>
   
@@ -1363,7 +1461,7 @@
 <p>Calico is a widely adopted, battle-tested open source networking and network security solution for Kubernetes, virtual machines, and bare-metal workloads
 Calico provides two major services for Cloud Native applications: network connectivity between workloads and network security policy enforcement between workloads.
 <a href="https://projectcalico.docs.tigera.io/getting-started/kubernetes/helm#download-the-helm-chart">Calico</a> docs chart bootstraps Calico infrastructure on a Kubernetes cluster using the Helm package manager.</p>
-<p>For complete project documentation, please visit the <a href="https://www.tigera.io/calico-documentation/">Calico documentation site</a>.</p>
+<p>For complete project documentation, please visit the <a href="https://docs.tigera.io/calico/next/about/">Calico documentation site</a>.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>Calico can be deployed by enabling the add-on via the following.</p>
 <div class="highlight"><pre><span></span><code>enable_calico = true
@@ -1381,8 +1479,8 @@ Calico provides two major services for Cloud Native applications: network connec
 </code></pre></div>
 <h3 id="gitops-configuration">GitOps Configuration<a class="headerlink" href="#gitops-configuration" title="Permanent link">&para;</a></h3>
 <p>The following properties are made available for use when managing the add-on via GitOps.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">calico</span> <span class="o">=</span> <span class="o">{</span>
-  <span class="nb">enable</span>  <span class="o">=</span> <span class="nb">true</span>
+<div class="highlight"><pre><span></span><code><span class="nv">calico</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+<span class="w">  </span><span class="nb">enable</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span>
 <span class="o">}</span>
 </code></pre></div>
 
